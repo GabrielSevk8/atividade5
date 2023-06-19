@@ -1,12 +1,12 @@
 programa
 {
-	inclua biblioteca Texto --> t
+	inclua biblioteca Texto --> t
 	
 	funcao inicio()
 	{
 		cadeia letra
 
-		escreva("Insira uma letra:")
+		escreva("Insira uma letra: ")
 		leia (letra)
 		letra = t.caixa_alta(letra)
 
@@ -22,7 +22,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 232; 
+ * @POSICAO-CURSOR = 109; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;

@@ -1,6 +1,6 @@
 programa
 {
-	inclua biblioteca Texto --> t
+	inclua biblioteca Texto --> t
 	
 	funcao inicio()
 	{
@@ -11,7 +11,7 @@ programa
 
 		se(turno=="M" ou turno=="V"){
 			escreva("Bom dia!")
-		}senao se(turno=="n"){
+		}senao se(turno=="N"){
 			escreva("boa noite!")
 		}senao{
 			escreva("codigo invalido")
@@ -23,7 +23,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 322; 
+ * @POSICAO-CURSOR = 280; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
