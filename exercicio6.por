@@ -1,31 +1,37 @@
 programa
 {
+	inclua biblioteca Texto --> t
 	
 	funcao inicio()
 	{
 		inteiro resposta=0
-		cadeia telefone,local,mora,devia,trabalhou
+		cadeia telefone,local,mora,devia,trabalhou
 
 		escreva("Responda sim ou não\nTelefonou para a vítima?: ")
 		leia (telefone)
+		telefone = t.caixa_alta(telefone)
 		escreva("Esteve no local do crime?: ")
 		leia(local)
+		local = t.caixa_alta(local)
 		escreva("Mora perto da vítima?: ")
 		leia(mora)
+		mora = t.caixa_alta(mora)
 		escreva("Devia para a vítima?: ")
 		leia(devia)
+		devia = t.caixa_alta(devia)
 		escreva("Já trabalhou com a vítima?: ")
 		leia(trabalhou)
+		trabalhou = t.caixa_alta(trabalhou)
 
-		se(telefone=="sim")
+		se(telefone=="SIM")
 			resposta=(resposta+1)
-		se(local=="sim")
+		se(local=="SIM")
 			resposta=(resposta+1)
-		se(mora=="sim")
+		se(mora=="SIM")
 			resposta=(resposta+1)
-		se(devia=="sim")
+		se(devia=="SIM")
 			resposta=(resposta+1)
-		se(trabalhou=="sim")
+		se(trabalhou=="SIM")
 			resposta=(resposta+1)
 
 		escolha(resposta){
@@ -45,6 +51,10 @@ programa
 			caso 5:
 			escreva("assassino")
 			pare
+
+			caso contrario:
+			escreva("inocente")
+			pare
 			
 		}
 	}
@@ -54,7 +64,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 850; 
+ * @POSICAO-CURSOR = 1098; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
